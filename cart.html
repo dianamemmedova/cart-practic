@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>Cart - Online Shopping</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Cart</h1>
+                <button class="back-btn" onclick="goToHome()">← Go to main page</button>
+            </div>
+        </header>
+
+        <div class="cart-container">
+            <div class="cart-items" id="cartItemsContainer">
+               
+            </div>
+
+            <div class="cart-summary">
+                <h2>Total Summary</h2>
+                <div class="summary-row">
+                    <span>Number of items:</span>
+                    <span id="totalItems">0</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="totalPrice">0 AZN</span>
+                </div>
+                <button class="checkout-btn" onclick="checkout()">Complete Order</button>
+                <button class="clear-cart-btn" onclick="clearCart()">Clear Cart</button>
+            </div>
+        </div>
+
+        <div class="empty-cart" id="emptyCart" style="display: none;">
+            <h2>Your cart is empty</h2>
+            <p>Return to the homepage to continue shopping</p>
+            <button class="back-btn" onclick="goToHome()">Go to homepage</button>
+        </div>
+    </div>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
